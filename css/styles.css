@@ -9,13 +9,13 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #222;
   background-color:#303030;
-  color:white;
+  color:#f2f2f2;
   text-align: center;
  height: 100vh;
   
 }
 .header{
-  height: 15%;
+  height: auto;
   border: 1px solid #303030;
 
 }
@@ -27,18 +27,19 @@ body {
   max-width: 1000px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  grid-template-rows: 220px 220px 220px 220px;
+  grid-template-rows: 220px 220px 220px 220px 220px 220px;
   grid-gap: 15px;
   margin: 0 auto;
   margin-top: 40px;
   height: 70%;
   margin-top: 80px;
+
  
 }
 
 
 .grid div{
-  border: 1px solid white;
+  border: 1px solid grey;
   overflow: hidden;
   box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 
@@ -81,3 +82,58 @@ background-color: yellow;
   transform: scale(1.15);
 
 }
+
+@media screen and (min-width: 310px) {
+
+  input[type=text] {
+
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    
+  
+    font-size: 14px;
+    width: 70%;
+  }
+  .gal-title{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0px 20px 0px 20px;
+ 
+  }
+  .grid {
+    margin-top:25px;
+
+  }
+}
+@media screen and (min-width: 600px) {
+  .gal-title{
+    font-size: 32px;
+    font-weight: bold;
+    padding: 0px 20px 0px 20px;
+ 
+  }
+
+  input[type=text] {
+  
+    padding: 12px;
+    border: none;
+  
+  
+    font-size: 17px;
+    width: 50%;
+  }
+  .grid {
+    margin-top:30px;
+
+  }
+  @media screen and (min-width: 1200px) {
+    input[type=text] {
+  
+      padding: 12px;
+      border: none;
+    
+    
+      font-size: 17px;
+      width: 40%;
+    }

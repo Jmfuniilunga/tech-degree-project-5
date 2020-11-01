@@ -8,5 +8,7 @@ window.addEventListener('load', function() {
 
 // Search Filter Function
 
-let search = new Filter('search', 'data-caption');
+
+
+const search = new Filter('search', 'data-caption');
 
